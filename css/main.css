@@ -14,17 +14,18 @@
 
 body , html{
     overflow: hidden;
+    background-color:var(--Light--gray);
+    height: 100vh;
+    width: 100%;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 @media (max-width:375px) {
-    body{
-        background-color:var(--Light--gray);
-        height: 100vh;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
 
     .content{
         min-width: 90vw;
@@ -72,4 +73,52 @@ body , html{
     font-size: 15px;
     color: var(--Grayish--blue);
 }
+}
+
+/* DESKTOP */
+.content{
+       width: 35%;
+       min-height: 45rem;
+       height: 70vh;
+    background-color: var(--White);
+    border-radius:0.625rem;
+   }
+/* HEADER */
+   .header__contimg{
+       text-align: center;
+       padding: 1.875rem;
+   }
+   .header__img{
+       border-radius: 0.625rem;
+       width: 75%;
+   }
+/* HEADER */
+
+/* BANNER */
+.banner{
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner__title{
+    font-size: 2rem;
+    width: 75%;
+}
+/* BANNER */
+
+/* paragraph */
+.paragraph{
+    text-align: center;
+    font-size: 1.5rem;
+    color: var(--Grayish--blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0 ;
+}
+
+.paragraph__paragraph{
+    width: 80%;
 }
